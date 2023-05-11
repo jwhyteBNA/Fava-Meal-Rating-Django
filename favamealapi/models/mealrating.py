@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.core.validators import MaxValueValidator
 
 
 class MealRating(models.Model):
@@ -10,4 +11,4 @@ class MealRating(models.Model):
         User, on_delete=models.CASCADE, related_name="mealrating")
     meal = models.ForeignKey(
         "Meal", on_delete=models.CASCADE, related_name="mealrating")
-    rating = models.IntegerField()
+    rating = models.IntegerField(validators=[MaxValueValidator(10)])

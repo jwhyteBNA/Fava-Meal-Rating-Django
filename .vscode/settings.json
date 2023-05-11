@@ -2,5 +2,28 @@
     "python.linting.pylintArgs": [
         "--load-plugins=pylint_django",
         "--django-settings-module=favameal.settings",
+    ],
+    "cSpell.words": [
+        "authtoken",
+        "Brownlee",
+        "Chaat",
+        "Chaatable",
+        "Favameal",
+        "favamealapi",
+        "favorited",
+        "favoritemeal",
+        "favoriterestaurant",
+        "hdlq",
+        "loaddata",
+        "mealrating",
+        "pipenv",
+        "Remo's",
+        "viewsets",
+        "Yvbe",
+        "Zomato"
+    ],
+    "cSpell.ignoreWords": [
+        "gorbage",
+        "userfavoriterestaurants"
     ]
 }
